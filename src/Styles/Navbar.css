@@ -23,9 +23,9 @@
 }
 
 .navbar {
-    background-color: var(--bg-primary);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px var(--shadow-color);
     position: fixed;
     top: 0;
@@ -47,7 +47,7 @@
 .navbar-brand {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-color);
     text-decoration: none;
     letter-spacing: -0.5px;
     transition: color 0.3s ease;
@@ -55,7 +55,7 @@
 }
 
 .navbar-brand:hover {
-    color: #007bff;
+    color: var(--accent-primary);
 }
 
 .navbar-menu {
@@ -76,14 +76,14 @@
 }
 
 .navbar-link {
-    color: var(--text-primary);
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar-link:hover {
-    color: #007bff;
+    color: var(--accent-primary);
 }
 
 /* Dropdown styles */
@@ -114,8 +114,8 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
-    background-color: var(--bg-secondary);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
     border-radius: 4px;
     padding: 2rem;
     min-width: 800px;
@@ -153,13 +153,13 @@
 }
 
 .see-more-link:not(.external) {
-    color: #007bff;
+    color: var(--accent-primary);
     font-weight: 500;
     gap: 0.5rem;
 }
 
 .see-more-link:not(.external):hover {
-    color: #0056b3;
+    color: var(--accent-secondary);
 }
 
 .see-more-link:not(.external)::after {
@@ -216,7 +216,7 @@
 .dropdown-link {
     display: block;
     padding: 0.375rem 0;
-    color: var(--text-primary);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.2s ease;
     font-size: 0.9375rem;
@@ -224,7 +224,7 @@
 }
 
 .dropdown-link:hover {
-    color: #007bff;
+    color: var(--accent-primary);
     background-color: transparent;
 }
 
@@ -240,7 +240,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: var(--text-color);
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -248,7 +248,6 @@
 /* Position the theme toggle */
 .theme-toggle {
     margin-left: auto;
-    margin-right: 1rem;
 }
 
 @media (max-width: 768px) {

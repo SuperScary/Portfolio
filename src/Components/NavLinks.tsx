@@ -36,6 +36,15 @@ export const NavBarLinks = [
                     { path: "/apis/differencing-api", label: "Differencing API" },
                 ],
             },
+            {
+                title: "Minecraft",
+                items: [
+                    { path: "/minecraft/hotswap", label: "Hotswap" },
+                    { path: "/minecraft/heavy-inventories", label: "Heavy Inventories" },
+                    { path: "/minecraft/flux-machines", label: "Flux Machines" },
+                    { path: "/minecraft/ae-machines", label: "AE Machines" },
+                ],
+            }
         ],
         seeMore: {
             text: "Looking for more projects? Check out my GitHub!",

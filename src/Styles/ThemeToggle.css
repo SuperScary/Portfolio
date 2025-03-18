@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
-    color: #333;
 }
 
 .theme-toggle:hover {
@@ -31,7 +30,7 @@
 
 /* Dark mode styles */
 [data-theme="dark"] .theme-toggle {
-    color: #fff;
+    color: #333;
 }
 
 [data-theme="dark"] .theme-toggle:hover {

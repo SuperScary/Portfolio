@@ -1,6 +1,6 @@
 body {
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
+    background-color: var(--background-secondary);
+    color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -13,8 +13,8 @@ body {
 /* Ensure the main content area adapts to theme */
 main {
     flex-grow: 1;
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
+    background-color: var(--background-secondary);
+    color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 

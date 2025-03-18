@@ -114,3 +114,14 @@
     background-color: #e9ecef;
     color: #212529;
 } 
+
+.platform-button.internal {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+}
+
+.platform-button.internal:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}

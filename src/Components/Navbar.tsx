@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
 import ExternalLinkIcon, { IconType } from "./ExternalLinkIcon";
 import ThemeToggle from "./ThemeToggle";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 interface NavLink {
     path: string;
@@ -87,12 +88,17 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                         <span>{seeMore.text}</span>
                         {seeMore.type === 'internal' ? (
                             <Link 
-                                to={seeMore.path}
-                                className="see-more-link"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                View More
-                            </Link>
+                            to={seeMore.path}
+                            className="see-more-link external"
+                            target=""
+                            rel="noopener noreferrer"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <ExternalLinkIcon 
+                                type={'internal'} 
+                                className="internal-icon"
+                            />
+                        </Link>
                         ) : (
                             <a 
                                 href={seeMore.path}
@@ -127,7 +133,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                         onClick={() => toggleDropdown(link.label)}
                     >
                         {link.label}
-                        <span className="dropdown-arrow">▼</span>
+                        <span className="dropdown-arrow">{ activeDropdown === link.label ? <IoIosArrowUp /> : <IoIosArrowDown /> }</span>
                     </button>
                     <ul
                         className={`dropdown-menu ${

@@ -22,7 +22,7 @@
 }
 
 .theme-icon.sun {
-    color: #ff9500;
+    color: #6e6e73;
 }
 
 .theme-icon.moon {
@@ -39,7 +39,7 @@
 }
 
 [data-theme="dark"] .theme-icon.sun {
-    color: #ffd60a;
+    color: #6e6e73;
 }
 
 [data-theme="dark"] .theme-icon.moon {

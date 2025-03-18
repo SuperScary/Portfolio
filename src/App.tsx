@@ -16,7 +16,7 @@ const App: React.FC = () => {
                 <main className="flex-grow flex flex-col justify-start">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/projects/robot-arm-game" element={<RobotArmGame />} />
+                        <Route path="/projects/robot-arm" element={<RobotArmGame />} />
                     </Routes>
                 </main>
                 <Footer />

@@ -11,6 +11,7 @@ import {
     FaDribbble
 } from 'react-icons/fa';
 import '../Styles/ExternalLinkIcon.css';
+import { IoIosArrowForward } from 'react-icons/io';
 
 type IconType = 
     | 'github'
@@ -21,7 +22,8 @@ type IconType =
     | 'deviantart'
     | 'behance'
     | 'dribbble'
-    | 'external';
+    | 'external'
+    | 'internal';
 
 interface ExternalLinkIconProps {
     type: IconType;
@@ -81,6 +83,11 @@ const iconMap: Record<IconType, IconConfig> = {
         icon: FaExternalLinkAlt,
         label: 'Visit',
         className: 'external'
+    },
+    internal: {
+        icon: IoIosArrowForward,
+        label: 'Go',
+        className: 'internal'
     }
 };
 

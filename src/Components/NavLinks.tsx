@@ -9,17 +9,31 @@ export const NavBarLinks = [
         label: "Projects",
         children: [
             {
-                title: "Games",
+                title: "Projects",
                 items: [
-                    { path: "/projects/robot-arm", label: "Robot Arm Game" },
-                    { path: "/projects/other-game", label: "Other Game" },
+                    { path: "/projects/sodium", label: "Sodium" },
+                    { path: "/projects/superdocs", label: "SuperDocs" },
+                    { path: "/projects/supercl", label: "SuperCL" },
                 ],
             },
             {
-                title: "Web Apps",
+                title: "Languages",
                 items: [
-                    { path: "/projects/web-app1", label: "Web Application 1" },
-                    { path: "/projects/web-app2", label: "Web Application 2" },
+                    { path: "/projects/gecco", label: "Gecco" },
+                    { path: "/projects/servo", label: "Servo" },
+                ],
+            },
+            {
+                title: "Libraries",
+                items: [
+                    { path: "/libraries/command-1", label: "⌘ 1" },
+                    { path: "/libraries/differencing", label: "Differencing" },
+                ],
+            },
+            {
+                title: "APIs",
+                items: [
+                    { path: "/apis/differencing-api", label: "Differencing API" },
                 ],
             },
         ],
@@ -50,6 +64,7 @@ export const NavBarLinks = [
         seeMore: {
             text: "View All Research",
             path: "/research",
+            type: "internal",
         },
     },
     { path: "/about", label: "About" },

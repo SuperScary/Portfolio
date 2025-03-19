@@ -10,6 +10,8 @@ import React from 'react';
 import { ThemeProvider } from './Context/ThemeContext';
 import About from "./Components/About";
 import Gecco from "./Components/languages/Gecco";
+import NotFound from "./Components/ErrorPages/NotFound";
+import ServerError from "./Components/ErrorPages/ServerError";
 
 const App: React.FC = () => {
     return (
@@ -25,6 +27,8 @@ const App: React.FC = () => {
                         {/* <Route path="/languages/servo" element={<Servo />} /> */}
 
                         <Route path="/about" element={<About />} />
+                        <Route path="/500" element={<ServerError />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>
                 <Footer />

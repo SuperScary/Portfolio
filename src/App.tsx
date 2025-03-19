@@ -9,6 +9,7 @@ import { NavBarLinks } from "./Components/NavLinks";
 import React from 'react';
 import { ThemeProvider } from './Context/ThemeContext';
 import About from "./Components/About";
+import Gecco from "./Components/languages/Gecco";
 
 const App: React.FC = () => {
     return (
@@ -19,6 +20,10 @@ const App: React.FC = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/projects/robot-arm" element={<RobotArmGame />} />
+
+                        <Route path="/languages/gecco" element={<Gecco />} />
+                        {/* <Route path="/languages/servo" element={<Servo />} /> */}
+
                         <Route path="/about" element={<About />} />
                     </Routes>
                 </main>

@@ -1,54 +1,95 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, TypeScript, and Vite. This project showcases my work and skills with a beautiful, interactive interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern and responsive design
+- Interactive 3D elements using Spline
+- Smooth animations with Framer Motion
+- Syntax highlighting for code snippets
+- Dark/Light mode support
+- Built with TypeScript for type safety
+- Styled with Tailwind CSS
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Spline (3D elements)
+- React Router DOM
+- PrismJS (Code highlighting)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Prerequisites
+
+- Node.js (v18 or higher)
+- Yarn package manager
+
+## 🔧 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies:
+```bash
+yarn install
 ```
+
+3. Start the development server:
+```bash
+yarn dev
+```
+
+4. Build for production:
+```bash
+yarn build
+```
+
+5. Preview the production build:
+```bash
+yarn preview
+```
+
+## 🧪 Available Scripts
+
+- `yarn dev` - Start the development server
+- `yarn build` - Build the project for production
+- `yarn preview` - Preview the production build
+- `yarn lint` - Run ESLint for code linting
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── src/           # Source files
+├── public/        # Static assets
+├── node_modules/  # Dependencies
+└── ...
+```
+
+## 🔍 Development
+
+The project uses:
+- ESLint for code linting
+- TypeScript for type checking
+- Vite for fast development and building
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📧 Contact
+
+SuperScary - [@supscary](https://x.com/supscary)
+
+Project Link: [https://github.com/SuperScary/Portfolio](https://github.com/SuperScary/Portfolio)

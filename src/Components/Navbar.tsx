@@ -163,6 +163,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
+                    <img src="/logo.svg" alt="SuperScary Logo" className="navbar-logo" />
                     SuperScary
                 </Link>
 

@@ -19,8 +19,8 @@ export const NavBarLinks = [
             {
                 title: "Languages",
                 items: [
-                    { path: "/projects/gecco", label: "Gecco" },
-                    { path: "/projects/servo", label: "Servo" },
+                    { path: "/languages/gecco", label: "Gecco" },
+                    { path: "/languages/servo", label: "Servo" },
                 ],
             },
             {

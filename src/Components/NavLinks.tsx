@@ -3,6 +3,8 @@
  * It is used in the Navbar component to render the links.
  */
 
+import { IconType } from './ExternalLinkIcon';
+
 export const NavBarLinks = [
     { path: "/", label: "Home" },
     {
@@ -49,8 +51,8 @@ export const NavBarLinks = [
         seeMore: {
             text: "Looking for more projects? Check out my GitHub!",
             path: "https://github.com/SuperScary",
-            type: "external",
-            iconType: "github",
+            type: "external" as const,
+            iconType: "github" as IconType,
         },
     },
     {
@@ -73,7 +75,7 @@ export const NavBarLinks = [
         seeMore: {
             text: "View All Research",
             path: "/research",
-            type: "internal",
+            type: "internal" as const,
         },
     },
     { path: "/about", label: "About" },

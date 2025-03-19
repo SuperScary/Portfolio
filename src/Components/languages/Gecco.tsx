@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ExternalLinkIcon from '../ExternalLinkIcon';
 import GeccoLogo from '../../assets/Gecco.svg';
 import { CodeBlock } from '../util/CodeBlock';
 import '../../Styles/Gecco.css';

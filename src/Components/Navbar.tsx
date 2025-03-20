@@ -64,11 +64,13 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
         const groups = children.filter((item): item is NavGroup => 'items' in item);
         
         return (
-            <>
+            <div className="full-width">
                 <div className="dropdown-groups">
                     {groups.map((group) => (
                         <div key={group.title} className="dropdown-group">
-                            <div className="dropdown-group-title">{group.title}</div>
+                            <Link to={group.title.replace(/\s+/g, '-').toLowerCase()}>
+                                <div className="dropdown-group-title">{group.title}</div>
+                            </Link>
                             {group.items.map((subItem) => (
                                 <li key={subItem.label} className="dropdown-item">
                                     <Link
@@ -115,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                         )}
                     </div>
                 )}
-            </>
+            </div>
         );
     };
 

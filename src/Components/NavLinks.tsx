@@ -6,9 +6,10 @@
 import { IconType } from './ExternalLinkIcon';
 
 export const NavBarLinks = [
-    { path: "/", label: "Home" },
+    { path: "/", label: "Home", showInFooter: false },
     {
         label: "Projects",
+        showInFooter: true,
         children: [
             {
                 title: "Projects",
@@ -57,6 +58,7 @@ export const NavBarLinks = [
     },
     {
         label: "Research",
+        showInFooter: true,
         children: [
             {
                 title: "Publications",
@@ -78,5 +80,5 @@ export const NavBarLinks = [
             type: "internal" as const,
         },
     },
-    { path: "/about", label: "About" },
+    { path: "/about", label: "About", showInFooter: true },
 ];

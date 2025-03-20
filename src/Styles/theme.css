@@ -3,6 +3,7 @@
     --text-color: #000000;
     --text-secondary: #333333;
     --text-muted: #666666;
+    --text-inverted: #ffffff;
 
     /* Logo Filter */
     --logo-filter: invert(0);
@@ -57,6 +58,7 @@
     --text-color: #ffffff;
     --text-secondary: #e5e5e5;
     --text-muted: #a3a3a3;
+    --text-inverted: #000000;
 
     /* Logo Filter */
     --logo-filter: invert(1);
